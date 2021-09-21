@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /*  box-sizing là một thuộc tính sẽ giúp bạn có thể tính toán và làm chủ được kích thước của một phần tử dựa vào thuộc tính width và height. */
+  /* boder-box: thì width và heigh sẽ bao gồm cho cả phần nội dung, padding và border nhưng không bao gồm margin. */
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  z-index: 999;
+  /* Relative: Định vị trí tuyệt đối cho các thành phần, không gây ảnh hưởng tới vị trí ban đầu hay các thành phần khác.
+  Absolute: định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài, hoặc cửa sổ trình duyệt.  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* lam cac khoi box xep  */
+  display: flex;
+  /* Chinh cac khoi theo chieu ngang
+  Lam cac khoi box tach deu ra 2 ben */
+  justify-content: space-between;
+  /* Chinh cac khoi theo chieu doc */
+  align-items: center;
+  padding: 15px 150px;
+  transition: 0.5 ease;
+}
